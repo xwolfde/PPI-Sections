@@ -1,0 +1,585 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PPI Sections v1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2014-09-23 16:23:55+0000\n"
+"Last-Translator: xwolf <xwolf@xwolf.de>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: \n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: ppi-sections.php:38
+#: ppi-sections.php:80
+#: ppi-sections.php:134
+#@ ppi_sections
+msgid "Germany"
+msgstr "Deutschland"
+
+#: ppi-sections.php:39
+#@ ppi_sections
+msgid "Pirate Party Germany"
+msgstr "Piratenpartei Deutschland"
+
+#: ppi-sections.php:42
+#@ ppi_sections
+msgid "Baden-W&uuml;rttemberg"
+msgstr ""
+
+#: ppi-sections.php:43
+#@ ppi_sections
+msgid "Bayern"
+msgstr ""
+
+#: ppi-sections.php:44
+#@ ppi_sections
+msgid "Berlin"
+msgstr ""
+
+#: ppi-sections.php:45
+#@ ppi_sections
+msgid "Brandenburg"
+msgstr ""
+
+#: ppi-sections.php:46
+#@ ppi_sections
+msgid "Bremen"
+msgstr ""
+
+#: ppi-sections.php:47
+#@ ppi_sections
+msgid "Hamburg"
+msgstr ""
+
+#: ppi-sections.php:48
+#@ ppi_sections
+msgid "Hessen"
+msgstr ""
+
+#: ppi-sections.php:49
+#@ ppi_sections
+msgid "Mecklenburg-Vorpommern"
+msgstr ""
+
+#: ppi-sections.php:50
+#@ ppi_sections
+msgid "Niedersachsen"
+msgstr ""
+
+#: ppi-sections.php:51
+#@ ppi_sections
+msgid "Nordrhein-Westfalen"
+msgstr ""
+
+#: ppi-sections.php:52
+#@ ppi_sections
+msgid "Rheinland-Pfalz"
+msgstr ""
+
+#: ppi-sections.php:53
+#@ ppi_sections
+msgid "Saarland"
+msgstr ""
+
+#: ppi-sections.php:54
+#@ ppi_sections
+msgid "Sachsen"
+msgstr ""
+
+#: ppi-sections.php:55
+#@ ppi_sections
+msgid "Sachsen-Anhalt"
+msgstr ""
+
+#: ppi-sections.php:56
+#@ ppi_sections
+msgid "Schleswig-Holstein"
+msgstr ""
+
+#: ppi-sections.php:57
+#@ ppi_sections
+msgid "Th&uuml;ringen"
+msgstr ""
+
+#: ppi-sections.php:60
+#@ ppi_sections
+msgid "International"
+msgstr ""
+
+#: ppi-sections.php:61
+#: ppi-sections.php:115
+#@ ppi_sections
+msgid "Pirate Party International"
+msgstr ""
+
+#: ppi-sections.php:64
+#: ppi-sections.php:118
+#@ ppi_sections
+msgid "Australia"
+msgstr "Australien"
+
+#: ppi-sections.php:65
+#: ppi-sections.php:119
+#@ ppi_sections
+msgid "Austria"
+msgstr "Österreich"
+
+#: ppi-sections.php:66
+#: ppi-sections.php:120
+#@ ppi_sections
+msgid "Argentina"
+msgstr "Argentinien"
+
+#: ppi-sections.php:67
+#: ppi-sections.php:121
+#@ ppi_sections
+msgid "Belarus"
+msgstr "Weißrussland"
+
+#: ppi-sections.php:68
+#: ppi-sections.php:122
+#@ ppi_sections
+msgid "Beligium"
+msgstr "Belgien"
+
+#: ppi-sections.php:69
+#: ppi-sections.php:123
+#@ ppi_sections
+msgid "Brazil"
+msgstr "Brasilien"
+
+#: ppi-sections.php:70
+#: ppi-sections.php:124
+#@ ppi_sections
+msgid "Canada"
+msgstr "Kanada"
+
+#: ppi-sections.php:71
+#: ppi-sections.php:125
+#@ ppi_sections
+msgid "Chile"
+msgstr ""
+
+#: ppi-sections.php:72
+#: ppi-sections.php:126
+#@ ppi_sections
+msgid "Columbia"
+msgstr "Kolumbien"
+
+#: ppi-sections.php:73
+#: ppi-sections.php:127
+#@ ppi_sections
+msgid "Croatia"
+msgstr "Kroatien"
+
+#: ppi-sections.php:74
+#: ppi-sections.php:128
+#@ ppi_sections
+msgid "Cyprus"
+msgstr "Zypern"
+
+#: ppi-sections.php:75
+#: ppi-sections.php:129
+#@ ppi_sections
+msgid "Czech Republic"
+msgstr "Tschechien"
+
+#: ppi-sections.php:76
+#: ppi-sections.php:130
+#@ ppi_sections
+msgid "Denmark"
+msgstr "Dänemark"
+
+#: ppi-sections.php:77
+#: ppi-sections.php:131
+#@ ppi_sections
+msgid "Estonia"
+msgstr "Estland"
+
+#: ppi-sections.php:78
+#: ppi-sections.php:132
+#@ ppi_sections
+msgid "Finland"
+msgstr "Finnland"
+
+#: ppi-sections.php:79
+#: ppi-sections.php:133
+#@ ppi_sections
+msgid "France"
+msgstr "Frankreich"
+
+#: ppi-sections.php:81
+#: ppi-sections.php:135
+#@ ppi_sections
+msgid "Greece"
+msgstr "Griechenland"
+
+#: ppi-sections.php:82
+#: ppi-sections.php:136
+#@ ppi_sections
+msgid "Guatemala"
+msgstr ""
+
+#: ppi-sections.php:83
+#: ppi-sections.php:137
+#@ ppi_sections
+msgid "Hungary"
+msgstr "Ungarn"
+
+#: ppi-sections.php:84
+#: ppi-sections.php:138
+#@ ppi_sections
+msgid "Iceland"
+msgstr "Island"
+
+#: ppi-sections.php:85
+#: ppi-sections.php:139
+#@ ppi_sections
+msgid "Israel"
+msgstr ""
+
+#: ppi-sections.php:86
+#: ppi-sections.php:140
+#@ ppi_sections
+msgid "Italy"
+msgstr "Italien"
+
+#: ppi-sections.php:87
+#: ppi-sections.php:141
+#@ ppi_sections
+msgid "Kazakhstan"
+msgstr "Kasachstan"
+
+#: ppi-sections.php:88
+#: ppi-sections.php:142
+#@ ppi_sections
+msgid "Korea, South"
+msgstr "Südkorea"
+
+#: ppi-sections.php:89
+#: ppi-sections.php:143
+#@ ppi_sections
+msgid "Latvia"
+msgstr "Lettland"
+
+#: ppi-sections.php:90
+#: ppi-sections.php:144
+#@ ppi_sections
+msgid "Lithuania"
+msgstr "Litauen"
+
+#: ppi-sections.php:91
+#: ppi-sections.php:145
+#@ ppi_sections
+msgid "Luxembourg"
+msgstr "Luxenburg"
+
+#: ppi-sections.php:92
+#: ppi-sections.php:146
+#@ ppi_sections
+msgid "Mexico"
+msgstr "Mexiko"
+
+#: ppi-sections.php:93
+#: ppi-sections.php:147
+#@ ppi_sections
+msgid "Netherlands"
+msgstr "Niederlande"
+
+#: ppi-sections.php:94
+#: ppi-sections.php:148
+#@ ppi_sections
+msgid "New Zealand"
+msgstr "Neu Seeland"
+
+#: ppi-sections.php:95
+#: ppi-sections.php:149
+#@ ppi_sections
+msgid "Peru"
+msgstr ""
+
+#: ppi-sections.php:96
+#: ppi-sections.php:150
+#@ ppi_sections
+msgid "Poland"
+msgstr "Polen"
+
+#: ppi-sections.php:97
+#: ppi-sections.php:151
+#@ ppi_sections
+msgid "Portugal"
+msgstr ""
+
+#: ppi-sections.php:98
+#: ppi-sections.php:152
+#@ ppi_sections
+msgid "Romania"
+msgstr "Rumänien"
+
+#: ppi-sections.php:99
+#: ppi-sections.php:153
+#@ ppi_sections
+msgid "Russia"
+msgstr "Russland"
+
+#: ppi-sections.php:100
+#: ppi-sections.php:154
+#@ ppi_sections
+msgid "Serbia"
+msgstr "Serbien"
+
+#: ppi-sections.php:101
+#: ppi-sections.php:155
+#@ ppi_sections
+msgid "Sweden"
+msgstr "Schweden"
+
+#: ppi-sections.php:102
+#: ppi-sections.php:156
+#@ ppi_sections
+msgid "Switzerland"
+msgstr "Schweiz"
+
+#: ppi-sections.php:103
+#: ppi-sections.php:157
+#@ ppi_sections
+msgid "Slovakia"
+msgstr "Slowakei"
+
+#: ppi-sections.php:104
+#: ppi-sections.php:158
+#@ ppi_sections
+msgid "Slovenia"
+msgstr "Slowenien"
+
+#: ppi-sections.php:105
+#: ppi-sections.php:159
+#@ ppi_sections
+msgid "Spain"
+msgstr "Spanien"
+
+#: ppi-sections.php:106
+#: ppi-sections.php:160
+#@ ppi_sections
+msgid "Turkey"
+msgstr "Türkei"
+
+#: ppi-sections.php:107
+#: ppi-sections.php:161
+#@ ppi_sections
+msgid "Ukraine"
+msgstr ""
+
+#: ppi-sections.php:108
+#: ppi-sections.php:162
+#@ ppi_sections
+msgid "Uruguay"
+msgstr ""
+
+#: ppi-sections.php:109
+#: ppi-sections.php:163
+#@ ppi_sections
+msgid "United Kingdom"
+msgstr "Vereinigtes Königreich"
+
+#: ppi-sections.php:110
+#: ppi-sections.php:164
+#@ ppi_sections
+msgid "United States"
+msgstr "USA"
+
+#: ppi-sections.php:114
+#@ ppi_sections
+msgid "International (with flags)"
+msgstr "Piratenparteien weltweit (mit Flaggen)"
+
+#: ppi-sections.php:168
+#: ppi-sections.php:192
+#: ppi-sections.php:205
+#: ppi-sections.php:224
+#: ppi-sections.php:234
+#: ppi-sections.php:257
+#: ppi-sections.php:269
+#: ppi-sections.php:300
+#: ppi-sections.php:326
+#: ppi-sections.php:341
+#: ppi-sections.php:359
+#: ppi-sections.php:373
+#@ ppi_sections
+msgid "<abbr title=\"Country Association\">CA</abbr>"
+msgstr "<abbr title=\"Landesverband\">LV</abbr>"
+
+#: ppi-sections.php:171
+#: ppi-sections.php:172
+#: ppi-sections.php:173
+#: ppi-sections.php:195
+#: ppi-sections.php:196
+#: ppi-sections.php:197
+#: ppi-sections.php:198
+#: ppi-sections.php:199
+#: ppi-sections.php:200
+#: ppi-sections.php:201
+#: ppi-sections.php:227
+#: ppi-sections.php:228
+#: ppi-sections.php:229
+#@ ppi_sections
+msgid "<abbr title=\"District Association\">DA</abbr>"
+msgstr "<abbr title=\"Bezirksverband\">BzV</abbr>"
+
+#: ppi-sections.php:174
+#: ppi-sections.php:175
+#: ppi-sections.php:176
+#: ppi-sections.php:177
+#: ppi-sections.php:178
+#: ppi-sections.php:179
+#: ppi-sections.php:180
+#: ppi-sections.php:181
+#: ppi-sections.php:182
+#: ppi-sections.php:183
+#: ppi-sections.php:184
+#: ppi-sections.php:185
+#: ppi-sections.php:186
+#: ppi-sections.php:187
+#: ppi-sections.php:188
+#: ppi-sections.php:209
+#: ppi-sections.php:210
+#: ppi-sections.php:211
+#: ppi-sections.php:212
+#: ppi-sections.php:213
+#: ppi-sections.php:214
+#: ppi-sections.php:237
+#: ppi-sections.php:238
+#: ppi-sections.php:239
+#: ppi-sections.php:240
+#: ppi-sections.php:241
+#: ppi-sections.php:242
+#: ppi-sections.php:243
+#: ppi-sections.php:244
+#: ppi-sections.php:245
+#: ppi-sections.php:246
+#: ppi-sections.php:247
+#: ppi-sections.php:248
+#: ppi-sections.php:249
+#: ppi-sections.php:250
+#: ppi-sections.php:251
+#: ppi-sections.php:252
+#: ppi-sections.php:253
+#: ppi-sections.php:260
+#: ppi-sections.php:273
+#: ppi-sections.php:275
+#: ppi-sections.php:276
+#: ppi-sections.php:277
+#: ppi-sections.php:278
+#: ppi-sections.php:279
+#: ppi-sections.php:281
+#: ppi-sections.php:282
+#: ppi-sections.php:283
+#: ppi-sections.php:284
+#: ppi-sections.php:285
+#: ppi-sections.php:286
+#: ppi-sections.php:288
+#: ppi-sections.php:289
+#: ppi-sections.php:290
+#: ppi-sections.php:291
+#: ppi-sections.php:292
+#: ppi-sections.php:293
+#: ppi-sections.php:294
+#: ppi-sections.php:304
+#: ppi-sections.php:305
+#: ppi-sections.php:306
+#: ppi-sections.php:307
+#: ppi-sections.php:308
+#: ppi-sections.php:309
+#: ppi-sections.php:310
+#: ppi-sections.php:311
+#: ppi-sections.php:312
+#: ppi-sections.php:313
+#: ppi-sections.php:314
+#: ppi-sections.php:315
+#: ppi-sections.php:316
+#: ppi-sections.php:317
+#: ppi-sections.php:318
+#: ppi-sections.php:319
+#: ppi-sections.php:320
+#: ppi-sections.php:321
+#: ppi-sections.php:329
+#: ppi-sections.php:330
+#: ppi-sections.php:331
+#: ppi-sections.php:332
+#: ppi-sections.php:333
+#: ppi-sections.php:334
+#: ppi-sections.php:335
+#: ppi-sections.php:336
+#: ppi-sections.php:337
+#: ppi-sections.php:345
+#: ppi-sections.php:346
+#: ppi-sections.php:347
+#: ppi-sections.php:348
+#: ppi-sections.php:349
+#: ppi-sections.php:350
+#: ppi-sections.php:351
+#: ppi-sections.php:352
+#: ppi-sections.php:353
+#: ppi-sections.php:354
+#: ppi-sections.php:363
+#: ppi-sections.php:376
+#: ppi-sections.php:377
+#: ppi-sections.php:378
+#: ppi-sections.php:379
+#: ppi-sections.php:380
+#: ppi-sections.php:381
+#: ppi-sections.php:382
+#: ppi-sections.php:383
+#@ ppi_sections
+msgid "<abbr title=\"District Chapter\">DC</abbr>"
+msgstr "<abbr title=\"Kreisverband\">KV</abbr>"
+
+#: ppi-sections.php:208
+#: ppi-sections.php:272
+#: ppi-sections.php:274
+#: ppi-sections.php:287
+#: ppi-sections.php:295
+#: ppi-sections.php:344
+#@ ppi_sections
+msgid "<abbr title=\"Town Chapter\">TC</abbr>"
+msgstr "<abbr title=\"Stadtverband\">SV</abbr>"
+
+#: ppi-sections.php:215
+#: ppi-sections.php:216
+#: ppi-sections.php:217
+#: ppi-sections.php:218
+#: ppi-sections.php:280
+#: ppi-sections.php:355
+#: ppi-sections.php:362
+#@ ppi_sections
+msgid "<abbr title=\"Regional Chapter\">RC</abbr>"
+msgstr "<abbr title=\"Regionalverband\">RV</abbr>"
+
+#: ppi-sections.php:472
+#@ ppi_sections
+msgid "PPI Sections"
+msgstr ""
+
+#: ppi-sections.php:473
+#@ ppi_sections
+msgid "List for several pirate party sections worldwide and in some countries"
+msgstr "Liste verschiedener Piratenparteien weltweit, sowie ihrer Gliederungen"
+
+#: ppi-sections.php:540
+#@ ppi_sections
+msgid "Chose section."
+msgstr "Bereich auswählen."
+
+msgid "This plugin displays a list of sections and subsctions of pirate parties international and syncs them against a defined index"
+msgstr "Dieses Plugin zeigte eine Liste von Piratenparteien weltweit sowie ihrer Gliederungen und aktualisiert diese selbstständig aus einer zentralen Quelle."
