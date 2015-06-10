@@ -4,7 +4,7 @@
  * Description: This plugin displays a list of sections and subsctions of pirate parties international and syncs them against a defined index    
  * Author: Wolfgang Wiese
  * Author URI: http://www.xwolf.de/
- * Plugin URI: http://www.ppi_sections.de/plugins/ppi-sections
+ * Plugin URI: http://www.piratenkleider.de/plugins/ppi-sections
  * Version: 1.0
  *
  * This program is free software; you can redistribute it and/or modify
@@ -26,10 +26,12 @@
 /**
  * Define defaults
  */
+load_plugin_textdomain('ppi_sections', '', dirname(plugin_basename(__FILE__)) ); 
+
 define("PPI_SECTIONS_INDEX_URL", "http://xwolf.loc/ppi-sections.txt");
 define("PPI_SECTIONS_UPDATE_DELTA", 432000);
-define("PPI_SECTIONS_INDEXKEY", 'International (with flags)');
-
+define("PPI_SECTIONS_INDEXKEY", 'ppi_int_flags');
+define("PP_DEFAULT_LANG", "en-US");
 /*
  * default links for pirate party worldwide and in germany
  */
@@ -57,7 +59,7 @@ define("PPI_SECTIONS_INDEXKEY", 'International (with flags)');
             __('Th&uuml;ringen', 'ppi_sections' ) => 'http://www.piraten-thueringen.de/'
         )
      ),
-     __('International', 'ppi_sections' ) => array(
+     'ppi_int'  => array(
          'title' => __('Pirate Party International', 'ppi_sections' ),
          'url'  => 'http://www.pp-international.net/',
          'sublist' => array(
@@ -111,7 +113,7 @@ define("PPI_SECTIONS_INDEXKEY", 'International (with flags)');
 
          )
      ), 
-      __('International (with flags)', 'ppi_sections' ) => array(
+      'ppi_int_flags'  => array(
          'title' => __('Pirate Party International', 'ppi_sections' ),
          'url'  => 'http://www.pp-international.net/',
          'sublist' => array(
@@ -394,7 +396,7 @@ function ppi_sections_update_index($updateNow = false) {
 	$ppi_index = get_option("ppi_sections_index", new stdClass());
 	
 	// Check if index exists or is outdated	if ( true == $updateNow || !isset( $ppi_index->nextUpdate ) || time() > $ppi_index->nextUpdate ):
-
+        
 	if ( true == $updateNow || !isset( $ppi_index->nextUpdate ) || time() > $ppi_index->nextUpdate ):
 		// Basic update time, 30 mins
 		$ppi_index->nextUpdate = time() + ( 60 * 30 );
@@ -414,8 +416,9 @@ function ppi_sections_update_index($updateNow = false) {
                     $ppi_index->sites = $ppi_sections_fallbackindex;
                 }
                         
-		
+		$locale = get_locale();
 		// Update local storage
+                $ppi_index->lang = $locale;
 		update_option("ppi_sections_index", $ppi_index);
 	endif;
         $ppi_indexkey =  get_option("ppi_sections_indexkey");
@@ -440,6 +443,7 @@ register_activation_hook(__FILE__, 'ppi_sections_install');
 function ppi_sections_uninstall() {
 	delete_option( "ppi_sections_index" );
         delete_option("ppi_sections_indexkey");
+        
 }
 register_deactivation_hook(__FILE__, 'ppi_sections_uninstall');
 
@@ -447,7 +451,6 @@ register_deactivation_hook(__FILE__, 'ppi_sections_uninstall');
  * 
  */
 function ppi_sections_init() {
-        load_plugin_textdomain('ppi_sections', '', dirname(plugin_basename(__FILE__)) ); 
         ppi_sections_update_index();
 	$ppi_sections_path = plugin_dir_url( __FILE__ );
 	if ( !is_admin() ) { // don't load this if we're in the backend
@@ -476,15 +479,26 @@ class ppi_sections_widget extends WP_Widget {
 
 	
 	public function widget( $args, $instance ) {     
+            $locale = get_locale();
             $ppi_index = get_option("ppi_sections_index");
-            
+            if ((!isset($ppi_index)) || ($locale != $ppi_index->lang) ) {
+                ppi_sections_update_index(true);
+                $ppi_index = get_option("ppi_sections_index");
+            }
+            echo "LANG; $locale = ".$ppi_index->lang."<br>";
+
             extract( $args );
             $ppi_indexkey =  $instance['chose_section'] ;
             if ((!isset($ppi_indexkey)) || (empty($ppi_indexkey))) {
                 $ppi_indexkey =  get_option("ppi_sections_indexkey");
             }
+            if ((!isset($ppi_indexkey)) || (empty($ppi_indexkey)) || (!isset($sites[$ppi_indexkey]))) {
+                $ppi_indexkey = PPI_SECTIONS_INDEXKEY; 
+            }
+            echo "<br>BEReich: $ppi_indexkey";
             echo $before_widget;
-            $sites = $ppi_index->sites; 
+            global  $ppi_sections_fallbackindex;
+            $sites =  $ppi_index->sites ||  $ppi_sections_fallbackindex; 
 
             $title =   $sites[$ppi_indexkey]['title'];
             $url =   $sites[$ppi_indexkey]['url'];
@@ -495,7 +509,7 @@ class ppi_sections_widget extends WP_Widget {
                     echo $before_title.$title.$after_title;
               }
               echo '<ul>';
-
+              var_dump($sites[$ppi_indexkey]);
               foreach($sites[$ppi_indexkey]['sublist'] as $i => $value) {
                    echo '<li><a href="'.$value.'">';                                                                                                        
                    echo $i.'</a></li>';
@@ -515,10 +529,14 @@ class ppi_sections_widget extends WP_Widget {
 
 	
 	public function form( $instance ) {       
-            ppi_sections_update_index(true);
 		$ppi_indexkey = $instance[ 'chose_section' ];		                 
                 if ((!isset($ppi_indexkey)) || (empty($ppi_indexkey))) {
                     $ppi_indexkey =  get_option("ppi_sections_indexkey");
+                }
+                $locale = get_locale();
+                $ppi_index_lang = get_option("ppi_sections_index_lang");
+                if ($locale != $ppi_index_lang) {
+                    ppi_sections_update_index(true);
                 }
                 $ppi_index = get_option("ppi_sections_index");
                 $sites = $ppi_index->sites;
@@ -543,5 +561,6 @@ class ppi_sections_widget extends WP_Widget {
 
 } // endclass widget
 //
+
 // register widget
 add_action( 'widgets_init', create_function( '', 'register_widget( "ppi_sections_widget" );' ) );
